@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { signup, login, logout, useAuth } from "./firebase";
+import { login, logout, useAuth } from "./firebase";
 import styles from './App.css';
 export default function App() {
   const [ loading, setLoading ] = useState(false);
