@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { login, logout, useAuth } from "./firebase";
+import { signup, login, logout, useAuth } from "./firebase";
 import styles from './App.css';
 export default function App() {
   const [ loading, setLoading ] = useState(false);
@@ -17,7 +17,6 @@ export default function App() {
     }
     setLoading(false);
   }
-
   async function handleLogout() {
     setLoading(true);
     try {
@@ -29,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <div  id="main">
+    <div onKeyPress={(e) => e.key === 'Enter' && handleLogin()} id="main">
       
       <div className="App-header ">
       Système de messagerie 0.1
@@ -37,11 +36,11 @@ export default function App() {
       <div className="container">
       <div  id="fields">
         <label className="label">Type your email:</label>
-        <input className="inputstyle" ref={emailRef} placeholder="xxxxx@xxxx.xxx" />
+        <input className="inputstyle" disabled={ loading || currentUser } ref={emailRef} placeholder="xxxxx@xxxx.xxx" />
         </div>
         <div id="fields">
-        <label className="label">Type your password</label>
-        <input className="inputstyle" ref={passwordRef} type="password" placeholder="**************" />
+        <label className="label" >Type your password</label>
+        <input className="inputstyle" disabled={ loading || currentUser } ref={passwordRef} type="password" placeholder="**************" />
         </div>
         <div className="vertical-center">
       <button className="button1" disabled={ loading || currentUser } onClick={handleLogin}>Log In</button>
