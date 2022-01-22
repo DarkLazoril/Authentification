@@ -48,7 +48,7 @@ export default function App() {
       <button className="button2" disabled={ loading || !currentUser } onClick={handleLogout}>Log Out</button>
       </div>
       </div>
-      <div>Currently logged in as: { currentUser?.email } </div>
+      <div>Welcome { currentUser?.email } </div>
     </div>
   );
 }
