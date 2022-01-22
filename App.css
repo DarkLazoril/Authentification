@@ -69,6 +69,7 @@ input[type=text], select, textarea {
   cursor: pointer;
   margin-right: 50px;
   width: 100px;
+  height: 50px;
 }
 .button2 {
   background-color: #f06363;
@@ -78,8 +79,19 @@ input[type=text], select, textarea {
   border-radius: 10px;
   cursor: pointer;
   width: 100px;
+  height: 50px
 }
-
+.button3 {
+  background-color: #f06363;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 50px;
+  cursor: pointer;
+  width: 100px;
+  max-height: 50px;
+}
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -97,4 +109,10 @@ input[type=text], select, textarea {
   align-items: center;
   margin: 0;
   height: 80px;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
