@@ -20,7 +20,8 @@ export default function LoginPage() {
   return (
     <div className="Family" id="main">
       <h1 className="texto2">Connected</h1>
-      <div className="Style11">Made by Adnan El Mouttaki | Welcome { currentUser?.displayName } 
+      <div className="Style11">Made by Adnan El Mouttaki | Welcome 
+      <span className="name"> { currentUser?.displayName } </span>
       <Link to="/LoginPage" style={{ textDecoration: 'none', color:'antiquewhite' }} ><span style={{ color:'#991A20'}} className="spanStyle"  onClick={handleLogout} disabled={ loading || !currentUser }> Log out</span></Link>
       </div>
     </div>

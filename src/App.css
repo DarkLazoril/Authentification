@@ -31,15 +31,15 @@ body{
     letter-spacing: .1em;
     text-shadow: 
       0 -1px 0 #fff, 
-      0 1px 0 #2e2e2e, 
-      0 2px 0 #2c2c2c, 
-      0 3px 0 #2a2a2a, 
-      0 4px 0 #282828, 
-      0 5px 0 #262626, 
-      0 6px 0 #242424, 
-      0 7px 0 #222, 
-      0 8px 0 #202020, 
-      0 9px 0 #1e1e1e, 
+      0  1px 0 #2e2e2e, 
+      0  2px 0 #2c2c2c, 
+      0  3px 0 #2a2a2a, 
+      0  4px 0 #282828, 
+      0  5px 0 #262626, 
+      0  6px 0 #242424, 
+      0  7px 0 #222, 
+      0  8px 0 #202020, 
+      0  9px 0 #1e1e1e, 
       0 10px 0 #1c1c1c, 
       0 11px 0 #1a1a1a, 
       0 12px 0 #181818, 
@@ -51,19 +51,20 @@ body{
 .texto{
   margin-top: 10px;
   position: relative;
-  color:white;
+  visibility: hidden;
   text-transform: uppercase;
 }
 .texto::before{
+  visibility:visible;
   content: attr(data-text);
   position: absolute;
   top:0;
   left:0;
   width:0;
   height: 100%;
-  color: #000000;
-  -webkit-text-stroke: 0.1vw #000000;
-  border-right: 2px solid #000000;
+  color: #ffffff;
+  /* -webkit-text-stroke: 0.1vw #000000; */
+  border-right: 2px solid #ffffff;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -72,7 +73,7 @@ body{
   {
     width: 0;
   }
-  70%, 90%
+  65%, 90%
   {
     width: 100%;
   }
@@ -169,6 +170,14 @@ input:disabled,input[disabled]{
 }
 .lbl{
   font-weight:600;
+}
+.name{
+  font-weight: 500;
+  color: blanchedalmond;
+}
+.name:hover{
+  color:cornflowerblue;
+  font-size: 18px;
 }
 .Style{
   -webkit-font-smoothing: antialiased;

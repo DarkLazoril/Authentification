@@ -43,7 +43,7 @@ export default function LoginPage() {
                 <span className="spanText">Need an account? <Link to="/SignUpPage" style={{ textDecoration: 'none' }}><span className="spanStyle" >Sign up</span></Link></span>
               </div>
               <div className="Style4">
-                <input className="input1" disabled={ loading || currentUser } ref={emailRef} type="text"  />
+                <input className="input1" disabled={ loading || currentUser } ref={emailRef} type="email"  />
               </div>
             </div>
             <div className="Style2">
