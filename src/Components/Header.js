@@ -1,5 +1,5 @@
 export const Header = () => {
     return (
-        <h1 className="texto" data-text="Authentification..." >Authentification...</h1>
+        <h1 className="texto" data-text="Authentication..." >Authentication...</h1>
       );
     }

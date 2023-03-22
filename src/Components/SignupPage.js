@@ -3,7 +3,7 @@ import { signup, useAuth } from "../firebase";
 import { Link, Navigate } from "react-router-dom";
 import { Header } from './Header.js';
 import ClosedEye from "../Icons/eye-closed.png"
-import styles from '../App.css';
+import styles from '../Authenitication.css';
 
 export default function SignupPage() {
   const [ loading, setLoading ] = useState(false);

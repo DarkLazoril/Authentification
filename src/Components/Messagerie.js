@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { logout,useAuth } from "../firebase";
 import { Link } from "react-router-dom";
 import { Header } from './Header.js';
-import styles from '../App.css';
+import styles from '../Authenitication.css';
 
 export default function LoginPage() {
   const [ loading, setLoading ] = useState(false);

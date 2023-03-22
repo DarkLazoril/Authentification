@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { login, useAuth,resetPassword  } from "../firebase";
 import { Link, Navigate } from "react-router-dom";
 import { Header } from './Header.js';
-import styles from '../App.css';
+import styles from '../Authenitication.css';
 
 export default function Forgot() {
 

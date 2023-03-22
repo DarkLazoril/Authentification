@@ -3,7 +3,7 @@ import { login, useAuth } from "../firebase";
 import { Link, Navigate } from "react-router-dom";
 import { Header } from './Header.js';
 import ClosedEye from "../Icons/eye-closed.png"
-import styles from '../App.css';
+import styles from '../Authenitication.css';
 
 export default function LoginPage() {
   const [ loading, setLoading ] = useState(false);
@@ -40,7 +40,7 @@ export default function LoginPage() {
             <div className="Style2">
               <div className="Style3">
                 <label className="lbl">Email</label>
-                <span className="spanText">Need an account? <Link to="/SignUpPage" style={{ textDecoration: 'none' }}><span className="spanStyle" >Sign up</span></Link></span>
+                <span className="spanText">Need an account? <Link to="/Adress" style={{ textDecoration: 'none' }}><span className="spanStyle" >Sign up</span></Link></span>
               </div>
               <div className="Style4">
                 <input className="input1" disabled={ loading || currentUser } ref={emailRef} type="email"  />
@@ -49,7 +49,7 @@ export default function LoginPage() {
             <div className="Style2">
               <div className="Style3">
                 <label className="lbl">Password</label>
-                <span className="spanText">Forgot your Password? <Link to="/Forgot" style={{ textDecoration: 'none' }}><span className="spanStyle" >Recover</span></Link></span>
+                <span className="spanText">Forgot your Password? <Link to="/Balance" style={{ textDecoration: 'none' }}><span className="spanStyle" >Recover</span></Link></span>
                 </div>
               <div className="Style7">
                 <input className="input1" disabled={ loading || currentUser } ref={passwordRef} type={passwordShown ? "text" : "password"}/>
